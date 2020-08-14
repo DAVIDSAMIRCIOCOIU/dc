@@ -1,6 +1,7 @@
 body {
   font-size: 18px;
   color: #343949 !important;
+  background-color: #faf8fa;
 }
 
 body h1 {
@@ -12,18 +13,30 @@ body h2 {
   font-weight: 300;
 }
 
+.navbar {
+  background-color: #faf8fa;
+  margin-bottom: 10px;
+}
+
 .navbar-brand {
-  background-color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0169d9), to(#02afe1));
+  background-image: linear-gradient(to right, #0169d9, #02afe1);
+  border: 2px solid #faf8fa;
   padding: 6px;
   border-radius: 50%;
 }
 
+.navbar-brand .logo {
+  padding-top: 5px;
+}
+
 .navbar-brand:hover {
-  background-color: #0169d9;
+  background-image: none;
+  border-color: #0169d9;
 }
 
 .navbar-brand:hover .logo {
-  fill: white !important;
+  fill: #0169d9 !important;
 }
 
 .nav-item a:hover {
@@ -35,7 +48,7 @@ body h2 {
 }
 
 .btn-questions {
-  background-color: white;
+  background-color: #faf8fa;
   color: #0169d9;
   border: 1.5px solid #0169d9;
   border-radius: 2rem;
@@ -43,7 +56,7 @@ body h2 {
 
 .btn-questions:hover {
   background-color: #0169d9;
-  color: white;
+  color: #faf8fa;
 }
 
 .header-body {
@@ -67,8 +80,9 @@ body h2 {
 }
 
 .about {
-  background-color: #0169d9;
-  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0169d9), to(#02afe1));
+  background-image: linear-gradient(to right, #0169d9, #02afe1);
+  color: #faf8fa;
   padding: 16px;
   padding-bottom: 100px;
 }
@@ -93,7 +107,7 @@ body h2 {
 
 .skills .skill {
   padding: 20px;
-  background-color: white;
+  background-color: #faf8fa;
 }
 
 .skills object {
@@ -102,7 +116,7 @@ body h2 {
 
 .skills .btn-skills {
   padding: 20px;
-  background-color: white;
+  background-color: #faf8fa;
   color: #0169d9;
   border: 1.5px solid #0169d9;
   border-radius: 50%;
@@ -113,11 +127,11 @@ body h2 {
 }
 
 .skills .btn-skills:hover .svg-skill {
-  fill: white;
+  fill: #faf8fa;
 }
 
 .header {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   position: relative;
   height: 300px;
 }
@@ -139,6 +153,24 @@ body h2 {
   left: 0;
   margin: auto;
   text-align: center;
-  color: white;
+  color: #faf8fa;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header {
+    height: 400px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .header {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    height: 600px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
