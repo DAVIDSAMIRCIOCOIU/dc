@@ -44,10 +44,11 @@ body {
       fill: $primaryBtn !important;
     }
   }
-}
-.nav-item a {
-  &:hover {
-    color: $primaryBtn !important;
+
+  .nav-item a {
+    &:hover {
+      color: $primaryBtn !important;
+    }
   }
 }
 
@@ -66,27 +67,38 @@ body {
   }
 }
 
-.header-body {
-  padding: 20px;
-  padding-top: 40px;
+.header {
+  margin-bottom: 10px;
+  position: relative;
+  height: 300px;
+  video {
+    object-fit: cover;
+    z-index: 0;
+  }
 
-  .avatar {
-    background-color: $primaryBtn;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 20px;
-    @media screen and (min-width: 769px) {
-      width: 210px;
-      height: 210px;
-    }
+  .overlay {
+    position: absolute;
+    height: 120px; /*height needs to be set*/
+    padding: 0 16px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    color: $pageBackground;
+  }
+
+  .header-body {
+    padding: 20px;
+    padding-top: 40px;
   }
 }
 
 .about {
   @include blueGradient();
   color: $pageBackground;
-  padding: 16px;
+  padding: 100px 16px;
   padding-bottom: 100px;
   h2 {
     font-weight: bold;
@@ -128,26 +140,23 @@ body {
   }
 }
 
-.header {
+.work {
+  color: $primaryFontColor;
+  padding: 100px 16px;
   margin-bottom: 10px;
-  position: relative;
-  height: 300px;
-  video {
-    object-fit: cover;
-    z-index: 0;
+  h2 {
+    font-weight: bold;
+    margin-bottom: 24px;
   }
+}
 
-  .overlay {
-    position: absolute;
-    height: 120px; /*height needs to be set*/
-    padding: 0 16px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    text-align: center;
-    color: $pageBackground;
+.contact {
+  color: $primaryFontColor;
+  padding: 100px 16px;
+  margin-bottom: 10px;
+  h2 {
+    font-weight: bold;
+    margin-bottom: 24px;
   }
 }
 

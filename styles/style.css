@@ -39,7 +39,7 @@ body h2 {
   fill: #0169d9 !important;
 }
 
-.nav-item a:hover {
+.navbar-brand .nav-item a:hover {
   color: #0169d9 !important;
 }
 
@@ -59,31 +59,42 @@ body h2 {
   color: #faf8fa;
 }
 
-.header-body {
+.header {
+  margin-bottom: 10px;
+  position: relative;
+  height: 300px;
+}
+
+.header video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+
+.header .overlay {
+  position: absolute;
+  height: 120px;
+  /*height needs to be set*/
+  padding: 0 16px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  color: #faf8fa;
+}
+
+.header .header-body {
   padding: 20px;
   padding-top: 40px;
-}
-
-.header-body .avatar {
-  background-color: #0169d9;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin: 20px;
-}
-
-@media screen and (min-width: 769px) {
-  .header-body .avatar {
-    width: 210px;
-    height: 210px;
-  }
 }
 
 .about {
   background-image: -webkit-gradient(linear, left top, right top, from(#0169d9), to(#02afe1));
   background-image: linear-gradient(to right, #0169d9, #02afe1);
   color: #faf8fa;
-  padding: 16px;
+  padding: 100px 16px;
   padding-bottom: 100px;
 }
 
@@ -130,30 +141,26 @@ body h2 {
   fill: #faf8fa;
 }
 
-.header {
+.work {
+  color: #343949;
+  padding: 100px 16px;
   margin-bottom: 10px;
-  position: relative;
-  height: 300px;
 }
 
-.header video {
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: 0;
+.work h2 {
+  font-weight: bold;
+  margin-bottom: 24px;
 }
 
-.header .overlay {
-  position: absolute;
-  height: 120px;
-  /*height needs to be set*/
-  padding: 0 16px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  text-align: center;
-  color: #faf8fa;
+.contact {
+  color: #343949;
+  padding: 100px 16px;
+  margin-bottom: 10px;
+}
+
+.contact h2 {
+  font-weight: bold;
+  margin-bottom: 24px;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
