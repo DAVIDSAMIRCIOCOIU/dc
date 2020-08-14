@@ -1,0 +1,143 @@
+body {
+  font-size: 18px;
+  color: #343949 !important;
+}
+
+body h1 {
+  font-size: 48px;
+}
+
+body h2 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.navbar-brand {
+  background-color: white;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.navbar-brand:hover {
+  background-color: #0169d9;
+}
+
+.navbar-brand:hover .logo {
+  fill: white !important;
+}
+
+.nav-item a:hover {
+  color: #0169d9 !important;
+}
+
+.btn {
+  font-size: 18px;
+}
+
+.btn-questions {
+  background-color: white;
+  color: #0169d9;
+  border: 1.5px solid #0169d9;
+  border-radius: 2rem;
+}
+
+.btn-questions:hover {
+  background-color: #0169d9;
+  color: white;
+}
+
+.header-body {
+  padding: 20px;
+  padding-top: 40px;
+}
+
+.header-body .avatar {
+  background-color: #0169d9;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+@media screen and (min-width: 769px) {
+  .header-body .avatar {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+.about {
+  background-color: #0169d9;
+  color: white;
+  padding: 16px;
+  padding-bottom: 100px;
+}
+
+.about h2 {
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.about .container {
+  width: 60%;
+}
+
+.skills {
+  margin-top: -100px;
+  padding: 24px;
+}
+
+.skills h2 {
+  font-weight: bold;
+}
+
+.skills .skill {
+  padding: 20px;
+  background-color: white;
+}
+
+.skills object {
+  margin: 20px;
+}
+
+.skills .btn-skills {
+  padding: 20px;
+  background-color: white;
+  color: #0169d9;
+  border: 1.5px solid #0169d9;
+  border-radius: 50%;
+}
+
+.skills .btn-skills:hover {
+  background-color: #0169d9;
+}
+
+.skills .btn-skills:hover .svg-skill {
+  fill: white;
+}
+
+.header {
+  margin-bottom: 40px;
+  position: relative;
+  height: 300px;
+}
+
+.header video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+
+.header .overlay {
+  position: absolute;
+  height: 120px;
+  /*height needs to be set*/
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

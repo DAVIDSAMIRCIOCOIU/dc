@@ -1,0 +1,134 @@
+$primaryBtn: #0169d9;
+$primaryFontColor: #343949;
+$lighterDetails: rgb(212, 212, 212);
+
+body {
+  font-size: 18px;
+  color: $primaryFontColor !important;
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+
+.navbar-brand {
+  background-color: white;
+  padding: 6px;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $primaryBtn;
+    .logo {
+      fill: white !important;
+    }
+  }
+}
+.nav-item a {
+  &:hover {
+    color: $primaryBtn !important;
+  }
+}
+
+.btn {
+  font-size: 18px;
+}
+
+.btn-questions {
+  background-color: white;
+  color: $primaryBtn;
+  border: 1.5px solid $primaryBtn;
+  border-radius: 2rem;
+  &:hover {
+    background-color: $primaryBtn;
+    color: white;
+  }
+}
+
+.header-body {
+  padding: 20px;
+  padding-top: 40px;
+
+  .avatar {
+    background-color: $primaryBtn;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+    @media screen and (min-width: 769px) {
+      width: 210px;
+      height: 210px;
+    }
+  }
+}
+
+.about {
+  background-color: $primaryBtn;
+  color: white;
+  padding: 16px;
+  padding-bottom: 100px;
+  h2 {
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+
+  .container {
+    width: 60%;
+  }
+}
+
+.skills {
+  margin-top: -100px;
+  padding: 24px;
+  h2 {
+    font-weight: bold;
+  }
+  .skill {
+    padding: 20px;
+    background-color: white;
+  }
+
+  object {
+    margin: 20px;
+  }
+
+  .btn-skills {
+    padding: 20px;
+    background-color: white;
+    color: $primaryBtn;
+    border: 1.5px solid $primaryBtn;
+    border-radius: 50%;
+    &:hover {
+      background-color: $primaryBtn;
+      .svg-skill {
+        fill: white;
+      }
+    }
+  }
+}
+
+.header {
+  margin-bottom: 40px;
+  position: relative;
+  height: 300px;
+  video {
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    height: 120px; /*height needs to be set*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    color: white;
+  }
+}
