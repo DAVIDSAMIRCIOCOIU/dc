@@ -9,7 +9,6 @@ body h1 {
 }
 
 body h2 {
-  font-size: 24px;
   font-weight: bold;
   margin-bottom: 24px;
 }
@@ -38,7 +37,7 @@ nav .navbar {
 nav .navbar-brand {
   background-image: -webkit-gradient(linear, left top, right top, from(#0169d9), to(#02afe1));
   background-image: linear-gradient(to right, #0169d9, #02afe1);
-  border: 2px solid #faf8fa;
+  border-left: 3px solid #faf8fa;
   padding: 6px;
   border-radius: 50%;
 }
@@ -90,10 +89,6 @@ nav .navbar-brand:hover .logo {
   padding-bottom: 100px;
 }
 
-.about .container {
-  width: 60%;
-}
-
 .skills {
   margin-top: -100px;
   padding: 24px;
@@ -129,7 +124,24 @@ nav .navbar-brand:hover .logo {
   position: auto;
   height: auto;
   padding: 100px 16px;
-  color: #141c3a;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0169d9), to(#02afe1));
+  background-image: linear-gradient(to right, #0169d9, #02afe1);
+  color: #faf8fa;
+}
+
+.contact .container .btn-blue {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #0169d9;
+  border-color: #faf8fa;
+}
+
+.contact .container .btn-blue:hover {
+  background-color: #faf8fa;
+}
+
+.contact .container .btn-blue:hover svg {
+  fill: #0169d9;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {

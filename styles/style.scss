@@ -42,7 +42,6 @@ body {
   }
 
   h2 {
-    font-size: 24px;
     font-weight: bold;
     margin-bottom: 24px;
   }
@@ -72,7 +71,7 @@ nav {
 
   .navbar-brand {
     @include blueGradient();
-    border: 2px solid $pageBackGroundColor;
+    border-left: 3px solid $pageBackGroundColor;
     padding: 6px;
     border-radius: 50%;
     .logo {
@@ -102,9 +101,7 @@ nav {
   color: $pageBackGroundColor;
   padding: 100px 16px;
   padding-bottom: 100px;
-  .container {
-    width: 60%;
-  }
+  
 }
 
 .skills {
@@ -135,7 +132,25 @@ nav {
 
 .contact {
   @include sectionSetUp(auto, 10px, auto, 100px 16px);
-  color: $primaryFontColor;
+  @include blueGradient();
+  color: $pageBackGroundColor;
+
+  .container {
+    .btn-blue {
+      padding: 10px;
+      border-radius: 50%;
+      background-color: $primaryBtn;
+      border-color: $pageBackGroundColor;
+      &:hover {
+        background-color: $pageBackGroundColor;
+        
+        svg {
+          fill: $primaryBtn;
+        }
+      }
+    }
+  }
+  
 }
 
 // Medium devices (tablets, 768px and up)
