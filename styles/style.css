@@ -1,6 +1,6 @@
 body {
   font-size: 18px;
-  color: #343949 !important;
+  color: #141c3a !important;
   background-color: #faf8fa;
 }
 
@@ -122,33 +122,24 @@ nav .navbar-brand:hover .logo {
 }
 
 .work {
-  color: #343949;
+  color: #141c3a;
   margin-bottom: 10px;
   position: auto;
   height: auto;
   padding: 100px 16px;
 }
 
-.work .work-description {
-  color: #faf8fa;
-  display: none;
-}
-
 .work figure {
-  margin-bottom: 50px;
-  padding: 20px;
-  border: 1.5px solid #0169d9;
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  background-image: url("../images/alchemis.JPG");
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/alchemis-pressing.jpg");
   background-size: cover;
-  position: relative;
 }
 
 .work figure:hover {
   background-image: none;
-  background-color: #0169d9;
+  background-color: #040442;
 }
 
 .work figure:hover .work-description {
@@ -162,6 +153,11 @@ nav .navbar-brand:hover .logo {
   left: 0;
   margin: auto;
   color: #faf8fa;
+}
+
+.work figure .work-description {
+  color: #faf8fa;
+  display: none;
 }
 
 .work figure img {
@@ -178,7 +174,7 @@ nav .navbar-brand:hover .logo {
   position: auto;
   height: auto;
   padding: 100px 16px;
-  color: #343949;
+  color: #141c3a;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {

@@ -1,7 +1,7 @@
 // Global vars
 $primaryBtn: #0169d9;
 $primaryBtnLighter: #02afe1;
-$primaryFontColor: #343949;
+$primaryFontColor: #141c3a;
 $pageBackGroundColor: #faf8fa;
 
 // Mixins
@@ -133,24 +133,15 @@ nav {
 .work {
   color: $primaryFontColor;
   @include sectionSetUp(auto, 10px, auto, 100px 16px);
-  .work-description {
-    color: $pageBackGroundColor;
-    display: none;
-  }
-
   figure {
-    margin-bottom: 50px;
-    padding: 20px;
-    border: 1.5px solid $primaryBtn;
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    background-image: url("../images/alchemis.JPG");
+    width: 300px;
+    height: 300px;
+    background-image: url("../images/alchemis-pressing.jpg");
     background-size: cover;
-    position: relative;
     &:hover {
       background-image: none;
-      background-color: $primaryBtn;
+      background-color: rgb(4, 4, 66);
       .work-description {
         display: inline-block;
         position: absolute;
@@ -163,7 +154,10 @@ nav {
         color: $pageBackGroundColor;
       }
     }
-
+    .work-description {
+      color: $pageBackGroundColor;
+      display: none;
+    }
     img {
       border-radius: 50%;
     }
