@@ -99,15 +99,6 @@ nav .navbar-brand:hover .logo {
   padding: 24px;
 }
 
-.skills h2 {
-  font-weight: bold;
-}
-
-.skills .skill {
-  padding: 20px;
-  background-color: #faf8fa;
-}
-
 .skills .btn-blue {
   padding: 20px;
   border-radius: 50%;
@@ -121,6 +112,10 @@ nav .navbar-brand:hover .logo {
   fill: #faf8fa;
 }
 
+.skills .card h5 {
+  color: #0169d9;
+}
+
 .work {
   color: #141c3a;
   margin-bottom: 10px;
@@ -129,7 +124,7 @@ nav .navbar-brand:hover .logo {
   padding: 100px 16px;
 }
 
-.work figure {
+.work .figure {
   border-radius: 50%;
   width: 300px;
   height: 300px;
@@ -137,12 +132,7 @@ nav .navbar-brand:hover .logo {
   background-size: cover;
 }
 
-.work figure:hover {
-  background-image: none;
-  background-color: #040442;
-}
-
-.work figure:hover .work-description {
+.work .figure .work-description {
   display: inline-block;
   position: absolute;
   height: 100px;
@@ -153,20 +143,6 @@ nav .navbar-brand:hover .logo {
   left: 0;
   margin: auto;
   color: #faf8fa;
-}
-
-.work figure .work-description {
-  color: #faf8fa;
-  display: none;
-}
-
-.work figure img {
-  border-radius: 50%;
-}
-
-.work .alchemis {
-  background-image: url("../images/alchemis.JPG");
-  background-size: cover;
 }
 
 .contact {
