@@ -1,84 +1,18 @@
+// Global vars
 $primaryBtn: #0169d9;
 $primaryBtnLighter: #02afe1;
 $primaryFontColor: #343949;
-$lighterDetails: #fffdff;
-$pageBackground: #faf8fa;
+$pageBackGroundColor: #faf8fa;
 
+// Mixins
 @mixin blueGradient() {
   background-image: linear-gradient(to right, $primaryBtn, $primaryBtnLighter);
 }
 
-body {
-  font-size: 18px;
-  color: $primaryFontColor !important;
-  background-color: $pageBackground;
-
-  h1 {
-    font-size: 48px;
-  }
-
-  h2 {
-    font-size: 24px;
-    font-weight: 300;
-  }
-}
-
-.navbar {
-  background-color: $pageBackground;
-  margin-bottom: 10px;
-}
-
-.navbar-brand {
-  @include blueGradient();
-  border: 2px solid $pageBackground;
-  padding: 6px;
-  border-radius: 50%;
-  .logo {
-    padding-top: 5px;
-  }
-
-  &:hover {
-    background-image: none;
-    border-color: $primaryBtn;
-    .logo {
-      fill: $primaryBtn !important;
-    }
-  }
-
-  .nav-item a {
-    &:hover {
-      color: $primaryBtn !important;
-    }
-  }
-}
-
-.btn {
-  font-size: 18px;
-}
-
-.btn-questions {
-  background-color: $pageBackground;
-  color: $primaryBtn;
-  border: 1.5px solid $primaryBtn;
-  border-radius: 2rem;
-  &:hover {
-    background-color: $primaryBtn;
-    color: $pageBackground;
-  }
-}
-
-.header {
-  margin-bottom: 10px;
-  position: relative;
-  height: 300px;
-  video {
-    object-fit: cover;
-    z-index: 0;
-  }
-
+@mixin overlay($_heigtht, $_color) {
   .overlay {
     position: absolute;
-    height: 120px; /*height needs to be set*/
+    height: $_heigtht; /*height needs to be set*/
     padding: 0 16px;
     top: 0;
     right: 0;
@@ -86,25 +20,88 @@ body {
     left: 0;
     margin: auto;
     text-align: center;
-    color: $pageBackground;
-  }
-
-  .header-body {
-    padding: 20px;
-    padding-top: 40px;
+    color: $_color;
   }
 }
 
-.about {
-  @include blueGradient();
-  color: $pageBackground;
-  padding: 100px 16px;
-  padding-bottom: 100px;
+@mixin sectionSetUp($_position, $_margin-bottom, $_height, $_padding) {
+  margin-bottom: $_margin-bottom;
+  position: $_position;
+  height: $_height;
+  padding: $_padding;
+}
+
+body {
+  font-size: 18px;
+  color: $primaryFontColor !important;
+  background-color: $pageBackGroundColor;
+
+  // Features
+  h1 {
+    font-size: 48px;
+  }
+
   h2 {
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 24px;
   }
 
+  .btn {
+    font-size: 18px;
+  }
+
+  .btn-blue {
+    color: $primaryBtn;
+    background-color: $pageBackGroundColor;
+    border: 1.5px solid $primaryBtn;
+    border-radius: 2rem;
+    &:hover {
+      color: $pageBackGroundColor;
+      background-color: $primaryBtn;
+    }
+  }
+}
+
+// NavBar
+nav {
+  .navbar {
+    background-color: $pageBackGroundColor;
+    margin-bottom: 10px;
+  }
+
+  .navbar-brand {
+    @include blueGradient();
+    border: 2px solid $pageBackGroundColor;
+    padding: 6px;
+    border-radius: 50%;
+    .logo {
+      padding-top: 5px;
+    }
+    &:hover {
+      background-image: none;
+      border-color: $primaryBtn;
+      .logo {
+        fill: $primaryBtn !important;
+      }
+    }
+  }
+}
+
+// Sections
+.header {
+  @include sectionSetUp(relative, 10px, 300px, auto);
+  video {
+    object-fit: cover;
+  }
+  @include overlay(120px, $pageBackGroundColor);
+}
+
+.about {
+  @include blueGradient();
+  color: $pageBackGroundColor;
+  padding: 100px 16px;
+  padding-bottom: 100px;
   .container {
     width: 60%;
   }
@@ -118,23 +115,16 @@ body {
   }
   .skill {
     padding: 20px;
-    background-color: $pageBackground;
+    background-color: $pageBackGroundColor;
   }
 
-  object {
-    margin: 20px;
-  }
-
-  .btn-skills {
+  .btn-blue {
     padding: 20px;
-    background-color: $pageBackground;
-    color: $primaryBtn;
-    border: 1.5px solid $primaryBtn;
     border-radius: 50%;
     &:hover {
       background-color: $primaryBtn;
       .svg-skill {
-        fill: $pageBackground;
+        fill: $pageBackGroundColor;
       }
     }
   }
@@ -142,22 +132,57 @@ body {
 
 .work {
   color: $primaryFontColor;
-  padding: 100px 16px;
-  margin-bottom: 10px;
-  h2 {
-    font-weight: bold;
-    margin-bottom: 24px;
+  @include sectionSetUp(auto, 10px, auto, 100px 16px);
+  .work-description {
+    color: $pageBackGroundColor;
+    display: none;
+  }
+
+  figure {
+    margin-bottom: 50px;
+    padding: 20px;
+    border: 1.5px solid $primaryBtn;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-image: url("../images/alchemis.JPG");
+    background-size: cover;
+    position: relative;
+    &:hover {
+      background-image: none;
+      background-color: $primaryBtn;
+      .work-description {
+        display: inline-block;
+        position: absolute;
+        height: 100px; /*height needs to be set*/
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        color: $pageBackGroundColor;
+      }
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .alchemis {
+    background-image: url("../images/alchemis.JPG");
+    background-size: cover;
+  }
+  .vox {
+  }
+
+  .diary {
   }
 }
 
 .contact {
+  @include sectionSetUp(auto, 10px, auto, 100px 16px);
   color: $primaryFontColor;
-  padding: 100px 16px;
-  margin-bottom: 10px;
-  h2 {
-    font-weight: bold;
-    margin-bottom: 24px;
-  }
 }
 
 // Medium devices (tablets, 768px and up)

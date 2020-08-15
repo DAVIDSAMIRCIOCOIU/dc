@@ -10,15 +10,32 @@ body h1 {
 
 body h2 {
   font-size: 24px;
-  font-weight: 300;
+  font-weight: bold;
+  margin-bottom: 24px;
 }
 
-.navbar {
+body .btn {
+  font-size: 18px;
+}
+
+body .btn-blue {
+  color: #0169d9;
+  background-color: #faf8fa;
+  border: 1.5px solid #0169d9;
+  border-radius: 2rem;
+}
+
+body .btn-blue:hover {
+  color: #faf8fa;
+  background-color: #0169d9;
+}
+
+nav .navbar {
   background-color: #faf8fa;
   margin-bottom: 10px;
 }
 
-.navbar-brand {
+nav .navbar-brand {
   background-image: -webkit-gradient(linear, left top, right top, from(#0169d9), to(#02afe1));
   background-image: linear-gradient(to right, #0169d9, #02afe1);
   border: 2px solid #faf8fa;
@@ -26,49 +43,29 @@ body h2 {
   border-radius: 50%;
 }
 
-.navbar-brand .logo {
+nav .navbar-brand .logo {
   padding-top: 5px;
 }
 
-.navbar-brand:hover {
+nav .navbar-brand:hover {
   background-image: none;
   border-color: #0169d9;
 }
 
-.navbar-brand:hover .logo {
+nav .navbar-brand:hover .logo {
   fill: #0169d9 !important;
-}
-
-.navbar-brand .nav-item a:hover {
-  color: #0169d9 !important;
-}
-
-.btn {
-  font-size: 18px;
-}
-
-.btn-questions {
-  background-color: #faf8fa;
-  color: #0169d9;
-  border: 1.5px solid #0169d9;
-  border-radius: 2rem;
-}
-
-.btn-questions:hover {
-  background-color: #0169d9;
-  color: #faf8fa;
 }
 
 .header {
   margin-bottom: 10px;
   position: relative;
   height: 300px;
+  padding: auto;
 }
 
 .header video {
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: 0;
 }
 
 .header .overlay {
@@ -85,22 +82,12 @@ body h2 {
   color: #faf8fa;
 }
 
-.header .header-body {
-  padding: 20px;
-  padding-top: 40px;
-}
-
 .about {
   background-image: -webkit-gradient(linear, left top, right top, from(#0169d9), to(#02afe1));
   background-image: linear-gradient(to right, #0169d9, #02afe1);
   color: #faf8fa;
   padding: 100px 16px;
   padding-bottom: 100px;
-}
-
-.about h2 {
-  font-weight: bold;
-  margin-bottom: 24px;
 }
 
 .about .container {
@@ -121,46 +108,77 @@ body h2 {
   background-color: #faf8fa;
 }
 
-.skills object {
-  margin: 20px;
-}
-
-.skills .btn-skills {
+.skills .btn-blue {
   padding: 20px;
-  background-color: #faf8fa;
-  color: #0169d9;
-  border: 1.5px solid #0169d9;
   border-radius: 50%;
 }
 
-.skills .btn-skills:hover {
+.skills .btn-blue:hover {
   background-color: #0169d9;
 }
 
-.skills .btn-skills:hover .svg-skill {
+.skills .btn-blue:hover .svg-skill {
   fill: #faf8fa;
 }
 
 .work {
   color: #343949;
-  padding: 100px 16px;
   margin-bottom: 10px;
+  position: auto;
+  height: auto;
+  padding: 100px 16px;
 }
 
-.work h2 {
-  font-weight: bold;
-  margin-bottom: 24px;
+.work .work-description {
+  color: #faf8fa;
+  display: none;
+}
+
+.work figure {
+  margin-bottom: 50px;
+  padding: 20px;
+  border: 1.5px solid #0169d9;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  background-image: url("../images/alchemis.JPG");
+  background-size: cover;
+  position: relative;
+}
+
+.work figure:hover {
+  background-image: none;
+  background-color: #0169d9;
+}
+
+.work figure:hover .work-description {
+  display: inline-block;
+  position: absolute;
+  height: 100px;
+  /*height needs to be set*/
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  color: #faf8fa;
+}
+
+.work figure img {
+  border-radius: 50%;
+}
+
+.work .alchemis {
+  background-image: url("../images/alchemis.JPG");
+  background-size: cover;
 }
 
 .contact {
-  color: #343949;
-  padding: 100px 16px;
   margin-bottom: 10px;
-}
-
-.contact h2 {
-  font-weight: bold;
-  margin-bottom: 24px;
+  position: auto;
+  height: auto;
+  padding: 100px 16px;
+  color: #343949;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
