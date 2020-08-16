@@ -21,7 +21,7 @@
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="#"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-gem logo"
-                    fill="#FAF8FA" xmlns="http://www.w3.org/2000/svg">
+                    fill="#0169d9" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
                         d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785l-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004l.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495l5.062-.005L8 13.366 5.47 5.495zm-1.371-.999l-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l2.92-.003 2.193 6.82L1.5 5.5zm7.889 6.817l2.194-6.828 2.929-.003-5.123 6.831z" />
                 </svg></a>
@@ -32,14 +32,14 @@
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mx-auto">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item mx-auto">
-                        <a class="nav-link" href="#">Work</a>
+                        <a class="nav-link" href="#work">Work</a>
                     </li>
                     <li class="nav-item mx-auto">
                         <form action="#contact">
-                            <button class="btn  ml-2 btn-blue" type="submit">Questions</button>
+                            <button class="btn  ml-2 btn-blue" type="submit">Contact</button>
                         </form>
                     </li>
                 </ul>
@@ -60,7 +60,7 @@
 
     </section>
 
-    <section class="about text-center shadow-sm">
+    <section class="about text-center shadow-sm" id="about">
         <div class=" container">
             <div class="row">
                 <div class="col-lg-12">
@@ -168,7 +168,7 @@
         </div>
     </section>
 
-    <section class="work text-center shadow-sm">
+    <section class="work text-center shadow-sm" id="work">
         <h2>Work</h2>
         <div class="container">
             <div class="row">
@@ -178,7 +178,8 @@
                         <div class="card-body">
                             <h4 class="card-title"><b>Alchemis</b></h4>
                             <h5 class="card-title">HTML/ CSS/ SASS/ Bootstrap</h5>
-                            <p class="card-text">A mock-up for a Coffee Shop website with an intuitive and fully responsive design.</p>
+                            <p class="card-text">A mock-up for a Coffee Shop website with an intuitive and fully
+                                responsive design.</p>
                             <button class="btn btn-blue">Visit</button>
                         </div>
                     </div>
@@ -190,7 +191,8 @@
                         <div class="card-body">
                             <h4 class="card-title"><b>Vox</b></h4>
                             <h5 class="card-title">HTML/ CSS/ SASS/ Bootstrap, EJS, Node.js, MongoDB</h5>
-                            <p class="card-text">A mock-up for a Coffee Shop website with an intuitive and fully responsive design.</p>
+                            <p class="card-text">A mock-up for a Coffee Shop website with an intuitive and fully
+                                responsive design.</p>
                             <button class="btn btn-blue">Visit</button>
                         </div>
                     </div>
@@ -202,7 +204,8 @@
                         <div class="card-body">
                             <h4 class="card-title"><b>Diary</b></h4>
                             <h5 class="card-title">HTML/ CSS/ SASS/ Bootstrap, EJS, Node.js, MongoDB</h5>
-                            <p class="card-text">A mock-up for a Coffee Shop website with an intuitive and fully responsive design.</p>
+                            <p class="card-text">A mock-up for a Coffee Shop website with an intuitive and fully
+                                responsive design.</p>
                             <button class="btn btn-blue">Visit</button>
                         </div>
                     </div>
@@ -211,48 +214,53 @@
         </div>
     </section>
 
-    <section class="contact text-center shadow-sm">
-        <h2>Contact</h2>
-        <button class="btn btn-blue">Message Me</button>
+    <section class="contact text-center shadow-sm" id="contact">
+        <button class="btn btn-blue m-4">
+            <h3>Questions</h3>
+        </button>
+        <div class="m-3 mb-4 mt-2">
+            <h5>Let's work together!</h5>
+            <h5>Drop me a message using any of these options.</h5>
+        </div>
+
         <div class=" container">
             <div class="row">
-                <div class="col-lg-4 mt-2 mb-2">
-                   <button class="btn btn-blue"><svg id="Bold" enable-background="new 0 0 24 24" height="2rem" viewBox="0 0 24 24" width="2rem" fill="#faf8fa"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z" />
-                    </svg>
+                <div class="col-lg-4 col-md-6 mt-2 mb-2">
+                    <button class="btn btn-blue"><svg id="Bold" enable-background="new 0 0 24 24" height="2rem"
+                            viewBox="0 0 24 24" width="2rem" fill="#faf8fa" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z" />
+                        </svg>
                     </button>
                 </div>
-                <div class="col-lg-4 mt-2 mb-2">
-                    <button class="btn btn-blue"><svg id="Bold" enable-background="new 0 0 24 24" height="2rem" viewBox="0 0 24 24" width="2rem" fill="#faf8fa"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z" />
-                        <path d="m.396 7.977h4.976v16.023h-4.976z" />
-                        <path
-                            d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z" />
+                <div class="col-lg-4 col-md-6 mt-2 mb-2">
+                    <button class="btn btn-blue"><svg id="Bold" enable-background="new 0 0 24 24" height="2rem"
+                            viewBox="0 0 24 24" width="2rem" fill="#faf8fa" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z" />
+                            <path d="m.396 7.977h4.976v16.023h-4.976z" />
+                            <path
+                                d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z" />
                         </svg>
-                        </button>
-                 </div>
-                 <div class="col-lg-4 mt-2 mb-2">
-                    <button class="btn btn-blue"><svg id="Bold" enable-background="new 0 0 24 24" height="2rem" viewBox="0 0 24 24" width="2rem" fill="#faf8fa" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
-                        </button>
-                 </div>
+                    </button>
+                </div>
+                <div class="col-lg-4 col-md-12 mt-2 mb-2">
+                    <button class="btn btn-blue"><svg id="Bold" enable-background="new 0 0 24 24" height="2rem"
+                            viewBox="0 0 24 24" width="2rem" fill="#faf8fa" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z" />
+                            </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="footer text-center">
-        <div class=" container">
-            <div class="row">
-                <div class="col">
+        <p><small class="text-muted">© Copyright 2020 David Ciocoiu</small></p>
 
-                </div>
-            </div>
-        </div>
+
     </section>
-
 
     <!-- Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

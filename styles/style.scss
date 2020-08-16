@@ -70,8 +70,7 @@ nav {
   }
 
   .navbar-brand {
-    @include blueGradient();
-    border-left: 3px solid $pageBackGroundColor;
+    border: 3px solid $primaryBtn;
     padding: 6px;
     border-radius: 50%;
     .logo {
@@ -80,8 +79,9 @@ nav {
     &:hover {
       background-image: none;
       border-color: $primaryBtn;
+      background-color: $primaryBtn;
       .logo {
-        fill: $primaryBtn !important;
+        fill: $pageBackGroundColor !important;
       }
     }
   }
@@ -134,21 +134,31 @@ nav {
   @include sectionSetUp(auto, 10px, auto, 100px 16px);
   @include blueGradient();
   color: $pageBackGroundColor;
-
+  .btn-blue {
+    padding: 15px 30px;
+    background-color: $primaryBtn;
+    border-color: $pageBackGroundColor;
+    color: $pageBackGroundColor;
+    font-weight: bold;
+    &:hover {
+      background-color: $pageBackGroundColor;
+      color: $primaryBtn;
+      svg {
+        fill: $primaryBtn;
+      }
+    }
+  }
   .container {
     .btn-blue {
       padding: 10px;
       border-radius: 50%;
       background-color: $primaryBtn;
-      border-color: $pageBackGroundColor;
       &:hover {
         background-color: $pageBackGroundColor;
         
-        svg {
-          fill: $primaryBtn;
-        }
       }
     }
+    
   }
   
 }

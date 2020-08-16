@@ -35,9 +35,7 @@ nav .navbar {
 }
 
 nav .navbar-brand {
-  background-image: -webkit-gradient(linear, left top, right top, from(#0169d9), to(#02afe1));
-  background-image: linear-gradient(to right, #0169d9, #02afe1);
-  border-left: 3px solid #faf8fa;
+  border: 3px solid #0169d9;
   padding: 6px;
   border-radius: 50%;
 }
@@ -49,10 +47,11 @@ nav .navbar-brand .logo {
 nav .navbar-brand:hover {
   background-image: none;
   border-color: #0169d9;
+  background-color: #0169d9;
 }
 
 nav .navbar-brand:hover .logo {
-  fill: #0169d9 !important;
+  fill: #faf8fa !important;
 }
 
 .header {
@@ -129,19 +128,31 @@ nav .navbar-brand:hover .logo {
   color: #faf8fa;
 }
 
+.contact .btn-blue {
+  padding: 15px 30px;
+  background-color: #0169d9;
+  border-color: #faf8fa;
+  color: #faf8fa;
+  font-weight: bold;
+}
+
+.contact .btn-blue:hover {
+  background-color: #faf8fa;
+  color: #0169d9;
+}
+
+.contact .btn-blue:hover svg {
+  fill: #0169d9;
+}
+
 .contact .container .btn-blue {
   padding: 10px;
   border-radius: 50%;
   background-color: #0169d9;
-  border-color: #faf8fa;
 }
 
 .contact .container .btn-blue:hover {
   background-color: #faf8fa;
-}
-
-.contact .container .btn-blue:hover svg {
-  fill: #0169d9;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
