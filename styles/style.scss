@@ -64,6 +64,10 @@ body {
 
 // NavBar
 nav {
+p {
+  margin: 0;
+  padding: 0;
+}
   .navbar {
     background-color: $pageBackGroundColor;
     margin-bottom: 10px;
@@ -71,17 +75,23 @@ nav {
 
   .navbar-brand {
     border: 3px solid $primaryBtn;
-    padding: 6px;
+    padding: 0.1px;
     border-radius: 50%;
-    .logo {
-      padding-top: 5px;
-    }
     &:hover {
       background-image: none;
       border-color: $primaryBtn;
       background-color: $primaryBtn;
-      .logo {
-        fill: $pageBackGroundColor !important;
+      .logo-background {
+        fill: $primaryBtn !important;
+      }
+      .logo-small-circle {
+        fill:$pageBackGroundColor;
+      }
+      .logo-d {
+fill: $pageBackGroundColor;
+      }
+      .logo-c {
+fill: $primaryBtn;
       }
     }
   }
@@ -137,12 +147,16 @@ nav {
     text-decoration: none;
     color: $pageBackGroundColor;
   }
+h3 {
+  font-size: 20px;
+}
+
   .btn-blue {
-    padding: 15px 30px;
+    padding: 5px 15px;
+    padding-bottom: 1px;
     background-color: $primaryBtn;
     border-color: $pageBackGroundColor;
     color: $pageBackGroundColor;
-    font-weight: bold;
     &:hover {
       background-color: $pageBackGroundColor;
       color: $primaryBtn;
@@ -151,6 +165,7 @@ nav {
       }
       a {
         color: $primaryBtn;
+        
       }
     }
   }

@@ -29,6 +29,11 @@ body .btn-blue:hover {
   background-color: #0169d9;
 }
 
+nav p {
+  margin: 0;
+  padding: 0;
+}
+
 nav .navbar {
   background-color: #faf8fa;
   margin-bottom: 10px;
@@ -36,12 +41,8 @@ nav .navbar {
 
 nav .navbar-brand {
   border: 3px solid #0169d9;
-  padding: 6px;
+  padding: 0.1px;
   border-radius: 50%;
-}
-
-nav .navbar-brand .logo {
-  padding-top: 5px;
 }
 
 nav .navbar-brand:hover {
@@ -50,8 +51,20 @@ nav .navbar-brand:hover {
   background-color: #0169d9;
 }
 
-nav .navbar-brand:hover .logo {
-  fill: #faf8fa !important;
+nav .navbar-brand:hover .logo-background {
+  fill: #0169d9 !important;
+}
+
+nav .navbar-brand:hover .logo-small-circle {
+  fill: #faf8fa;
+}
+
+nav .navbar-brand:hover .logo-d {
+  fill: #faf8fa;
+}
+
+nav .navbar-brand:hover .logo-c {
+  fill: #0169d9;
 }
 
 .header {
@@ -133,12 +146,16 @@ nav .navbar-brand:hover .logo {
   color: #faf8fa;
 }
 
+.contact h3 {
+  font-size: 20px;
+}
+
 .contact .btn-blue {
-  padding: 15px 30px;
+  padding: 5px 15px;
+  padding-bottom: 1px;
   background-color: #0169d9;
   border-color: #faf8fa;
   color: #faf8fa;
-  font-weight: bold;
 }
 
 .contact .btn-blue:hover {
